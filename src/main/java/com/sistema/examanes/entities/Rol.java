@@ -21,4 +21,28 @@ public class Rol {
     public Rol(String rolName) {
         this.rolName = rolName;
     }
+
+    public Long getRolId() {
+        return rolId;
+    }
+
+    public void setRolId(Long rolId) {
+        this.rolId = rolId;
+    }
+
+    public String getRolName() {
+        return rolName;
+    }
+
+    public void setRolName(String rolName) {
+        this.rolName = rolName;
+    }
+
+    public Set<UserRol> getUserRoles() {
+        return userRoles;
+    }
+
+    public void setUserRoles(Set<UserRol> userRoles) {
+        this.userRoles = userRoles;
+    }
 }
