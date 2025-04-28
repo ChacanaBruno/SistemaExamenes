@@ -26,7 +26,7 @@ public class SistemaExamanesBackendApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 
 		/*esto deberia ser un test.*/
-
+/*
 		User user = new User();
 
 		user.setUsername("bach");
@@ -52,5 +52,7 @@ public class SistemaExamanesBackendApplication implements CommandLineRunner {
 		User userSaved = userService.saveUser(user, userRoles);
 
 		System.out.println(userSaved.getUsername());
+	*/
 	}
+
 }

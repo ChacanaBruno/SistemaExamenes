@@ -1,5 +1,6 @@
 package com.sistema.examanes.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.util.HashSet;
@@ -23,6 +24,7 @@ public class User {
 
     //a user can have multiple roles
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "user")
+    @JsonIgnore
     private Set<UserRol> userRoles = new HashSet<>();
 
     public User() {

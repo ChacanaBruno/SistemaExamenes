@@ -41,5 +41,15 @@ public class UserServiceImpl implements UserService {
         return userLocal;
     }
 
+    @Override
+    public User getUserByUsername(String username) throws Exception {
+        return userRepository.findByUsername(username);
+    }
+
+    @Override
+    public void deleteUserById(Long idUser) throws Exception {
+        userRepository.deleteById(idUser);
+    }
+
 
 }
